@@ -3,16 +3,16 @@ getcitoken
 
 Retrieves Gitlab-CI Token for Automated Runner Authentication
 
+```
+user ~/getcitoken % ruby getcitoken.rb
+ba46f9b37eadd14a77ad
+```
+
 ## Requirements
 
 - mechanize gem
 - yaml gem
 - ruby 1.9 or newer
-
-```
-user ~/getcitoken % ruby getcitoken.rb
-ba46f9b37eadd14a77ad
-```
 
 ## Usage
 
