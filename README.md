@@ -9,6 +9,11 @@ Retrieves Gitlab-CI Token for Automated Runner Authentication
 - yaml gem
 - ruby 1.9 or newer
 
+```
+user ~/getcitoken % ruby getcitoken.rb
+ba46f9b37eadd14a77ad
+```
+
 ## Usage
 
 1) Edit config.yml to add in your username/password and gitlab-ci URL
@@ -16,4 +21,3 @@ Retrieves Gitlab-CI Token for Automated Runner Authentication
 2) Run gettoken.rb
 
 3) Receive token and be forever happy!
-
