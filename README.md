@@ -12,9 +12,8 @@ Retrieves Gitlab-CI Token for Automated Runner Authentication
 ## Usage
 
 1) Edit config.yml to add in your username/password and gitlab-ci URL
+
 2) Run gettoken.rb
-3) Receive token and be forever happy
 
-## Tests
+3) Receive token and be forever happy!
 
-hmmm... #TODO ?
