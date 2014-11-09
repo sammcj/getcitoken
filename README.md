@@ -19,6 +19,6 @@ Output is logged to getcitoken.log
 
 1) Copy config.yml.example to config.yml edit un/pw and gitlab-ci URL
 
-2) Run gettoken.rb
+2) Run ```ruby getcitoken.rb```
 
 3) Receive token and be forever happy!
