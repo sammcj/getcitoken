@@ -11,7 +11,7 @@ config = YAML.load_file('config.yml')
 gitlab_ci_url = config['gitlab_ci_url']
 
 agent = Mechanize.new
-agent.log = Logger.new "mechanize.log"
+agent.log = Logger.new "getcitoken.log"
 
 login_page = agent.get gitlab_ci_url+"/user_sessions/new"
 login_form = login_page.form

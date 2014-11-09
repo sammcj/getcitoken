@@ -1,3 +1,4 @@
 gitlab_ci_url: 'https://mycoolci.bro'
 gitlab_username: 'totallyraduser'
 gitlab_password: 'secretsauce'
+
