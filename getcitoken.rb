@@ -27,5 +27,5 @@ runner_page = agent.get agent.get gitlab_ci_url+"/admin/runners"
 
 # Return Token
 runner_page.search('code').each do |results|
-  puts results.to_s[6...-7] #TODO this is a bit(lot?) gross
+  puts runner_page.parser.xpath('//code/text()').to_html
 end
