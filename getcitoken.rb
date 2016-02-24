@@ -13,13 +13,13 @@ gitlab_ci_url = config['gitlab_ci_url']
 agent = Mechanize.new
 agent.log = Logger.new "getcitoken.log"
 
-login_page = agent.get gitlab_ci_url+"/user_sessions/new"
+login_page = agent.get gitlab_ci_url+"/users/sign_in"
 login_form = login_page.form
 
-email_field = login_form.field_with(name: "user_session[email]")
-password_field = login_form.field_with(name: "user_session[password]")
+login_field = login_form.field_with(name: "user[login]")
+password_field = login_form.field_with(name: "user[password]")
 
-email_field.value = config['gitlab_username']
+login_field.value = config['gitlab_username']
 password_field.value = config['gitlab_password']
 
 home_page = login_form.submit
